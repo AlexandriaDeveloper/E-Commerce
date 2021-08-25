@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b1jI0SBhliPCu8Q99SspnHgOmo5AAbrMH5jMQDa8OzYNWkD/ZofQt8CD/F2WIjM5vLUJtc2VfuBbvwlYxWCZ7w==",
+  "dgSpecHash": "y0peUBJywuq2XLmSyj+ap09+S2GKJ40nE/tOCEyXP00MwRtbCMgt6/+amG6QZH0sUhhhcVqCS8uiJUMnzhNM5Q==",
   "success": true,
-  "projectFilePath": "E:\\skinet\\api\\API.csproj",
+  "projectFilePath": "E:\\skinet\\E-Commerce\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TUF\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\TUF\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

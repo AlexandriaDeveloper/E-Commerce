@@ -1296,11 +1296,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\skinet\\api\\API.csproj",
+      "projectUniqueName": "E:\\skinet\\E-Commerce\\api\\API.csproj",
       "projectName": "API",
-      "projectPath": "E:\\skinet\\api\\API.csproj",
+      "projectPath": "E:\\skinet\\E-Commerce\\api\\API.csproj",
       "packagesPath": "C:\\Users\\TUF\\.nuget\\packages\\",
-      "outputPath": "E:\\skinet\\api\\obj\\",
+      "outputPath": "E:\\skinet\\E-Commerce\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\TUF\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1315,8 +1315,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\skinet\\infra\\Infra.csproj": {
-              "projectPath": "E:\\skinet\\infra\\Infra.csproj"
+            "E:\\skinet\\E-Commerce\\infra\\Infra.csproj": {
+              "projectPath": "E:\\skinet\\E-Commerce\\infra\\Infra.csproj"
             }
           }
         }

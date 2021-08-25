@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yCyWPKn2jzgVSo/0K2XTDWGm1eRe4mbpCnSIGuvx1Whj6mQDalWM4Hr+dtwan26XmqdpHCtn/hES6EXLKlksLg==",
+  "dgSpecHash": "OH1UvenSyyrmMcfLP2w36Bu54fEqvoWeCTP7E3E2tDaGOLztsQvM87MeRv9VyXeaDc5od3pwkyiqcfQlbJ9LeA==",
   "success": true,
-  "projectFilePath": "E:\\skinet\\infra\\Infra.csproj",
+  "projectFilePath": "E:\\skinet\\E-Commerce\\infra\\Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TUF\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\TUF\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

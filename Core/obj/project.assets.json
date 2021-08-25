@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\skinet\\Core\\Core.csproj",
+      "projectUniqueName": "E:\\skinet\\E-Commerce\\core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "E:\\skinet\\Core\\Core.csproj",
+      "projectPath": "E:\\skinet\\E-Commerce\\core\\Core.csproj",
       "packagesPath": "C:\\Users\\TUF\\.nuget\\packages\\",
-      "outputPath": "E:\\skinet\\Core\\obj\\",
+      "outputPath": "E:\\skinet\\E-Commerce\\core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\TUF\\AppData\\Roaming\\NuGet\\NuGet.Config"

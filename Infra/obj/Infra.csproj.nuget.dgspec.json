@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\skinet\\infra\\Infra.csproj": {}
+    "E:\\skinet\\E-Commerce\\infra\\Infra.csproj": {}
   },
   "projects": {
-    "E:\\skinet\\core\\Core.csproj": {
+    "E:\\skinet\\E-Commerce\\core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\skinet\\core\\Core.csproj",
+        "projectUniqueName": "E:\\skinet\\E-Commerce\\core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "E:\\skinet\\core\\Core.csproj",
+        "projectPath": "E:\\skinet\\E-Commerce\\core\\Core.csproj",
         "packagesPath": "C:\\Users\\TUF\\.nuget\\packages\\",
-        "outputPath": "E:\\skinet\\core\\obj\\",
+        "outputPath": "E:\\skinet\\E-Commerce\\core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\TUF\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -56,14 +56,14 @@
         }
       }
     },
-    "E:\\skinet\\infra\\Infra.csproj": {
+    "E:\\skinet\\E-Commerce\\infra\\Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\skinet\\infra\\Infra.csproj",
+        "projectUniqueName": "E:\\skinet\\E-Commerce\\infra\\Infra.csproj",
         "projectName": "Infra",
-        "projectPath": "E:\\skinet\\infra\\Infra.csproj",
+        "projectPath": "E:\\skinet\\E-Commerce\\infra\\Infra.csproj",
         "packagesPath": "C:\\Users\\TUF\\.nuget\\packages\\",
-        "outputPath": "E:\\skinet\\infra\\obj\\",
+        "outputPath": "E:\\skinet\\E-Commerce\\infra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\TUF\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -78,8 +78,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\skinet\\core\\Core.csproj": {
-                "projectPath": "E:\\skinet\\core\\Core.csproj"
+              "E:\\skinet\\E-Commerce\\core\\Core.csproj": {
+                "projectPath": "E:\\skinet\\E-Commerce\\core\\Core.csproj"
               }
             }
           }
