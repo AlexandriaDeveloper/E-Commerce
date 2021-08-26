@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Core.Interfaces;
 using Infra.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -31,6 +32,10 @@ namespace API
          
             services.AddControllers();
             services.AddDbContext<StoreContext>(opt => opt.UseSqlite(Configuration.GetConnectionString("Default"), b => b.MigrationsAssembly("Infra")));
+            services.AddScoped<IProductRepository,ProductRepository>();
+          
+          
+          
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
