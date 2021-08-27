@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using API.Helper;
 using Core.Interfaces;
 using Infra.Data;
 using Microsoft.AspNetCore.Builder;
@@ -32,8 +33,8 @@ namespace API
          
             services.AddControllers();
             services.AddDbContext<StoreContext>(opt => opt.UseSqlite(Configuration.GetConnectionString("Default"), b => b.MigrationsAssembly("Infra")));
-            services.AddScoped<IProductRepository,ProductRepository>();
-          
+            services.AddScoped(typeof(IGenericRepository<>),(typeof(GenericRepository<>)));
+            services.AddAutoMapper(typeof(MappingProfiles));
           
           
             services.AddSwaggerGen(c =>
@@ -55,6 +56,7 @@ namespace API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseStaticFiles();
 
             app.UseAuthorization();
 

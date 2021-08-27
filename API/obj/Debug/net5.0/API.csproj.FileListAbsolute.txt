@@ -120,3 +120,5 @@ E:\skinet\E-Commerce\api\obj\Debug\net5.0\API.dll
 E:\skinet\E-Commerce\api\obj\Debug\net5.0\ref\API.dll
 E:\skinet\E-Commerce\api\obj\Debug\net5.0\API.pdb
 E:\skinet\E-Commerce\api\obj\Debug\net5.0\API.genruntimeconfig.cache
+E:\skinet\E-Commerce\api\bin\Debug\net5.0\AutoMapper.dll
+E:\skinet\E-Commerce\api\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
