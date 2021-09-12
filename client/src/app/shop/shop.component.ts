@@ -100,7 +100,7 @@ export class ShopComponent implements OnInit {
     {
 
       this.shopParams.pageNumber =ev.page;
-      this.getProducts();
+      this.getProducts();1
     }
 
     
