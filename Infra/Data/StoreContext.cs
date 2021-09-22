@@ -13,7 +13,7 @@ namespace Infra.Data
 
         public DbSet<ProductBrand> ProductBrands { get; set; }
         public DbSet<ProductType> ProductTypes { get; set; }
-        public StoreContext( DbContextOptions<StoreContext> options) : base(options)
+        public StoreContext(DbContextOptions<StoreContext> options) : base(options)
         {
         }
 
@@ -21,14 +21,15 @@ namespace Infra.Data
         {
 
             base.OnModelCreating(modelBuilder);
-            
-            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly()) ;
 
-            if(Database.ProviderName =="Microsoft.EntityFrameworkCore.Sqlite"){
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+            if (Database.ProviderName == "Microsoft.EntityFrameworkCore.Sqlite")
+            {
 
                 foreach (var entityType in modelBuilder.Model.GetEntityTypes())
                 {
-                    var proerties = entityType.ClrType.GetProperties().Where(p => p.PropertyType ==typeof(decimal));
+                    var proerties = entityType.ClrType.GetProperties().Where(p => p.PropertyType == typeof(decimal));
                     foreach (var property in proerties)
                     {
                         modelBuilder.Entity(entityType.Name).Property(property.Name).HasConversion<double>();
