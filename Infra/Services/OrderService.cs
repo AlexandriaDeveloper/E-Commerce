@@ -73,5 +73,6 @@ namespace Infra.Services
             var spec = new OrderWithItemsAbdIrderingSpecification(buyerEmail);
             return await _unitOfWork.Repository<Order>().ListAsync(spec);
         }
+      
     }
 }

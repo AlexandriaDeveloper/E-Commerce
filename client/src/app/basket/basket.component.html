@@ -8,14 +8,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 py-5 mb-1">
-                    <app-basket-summery (increment)="incrementItemQuantity($event)"
+                    <app-basket-summery (increment)="incrementItemQuantity($event)" [items]="(basket$ |async).items"
                         (decrement)="decrementItemQuantity($event)" (remove)="removeBasketItem($event)">
                     </app-basket-summery>
                 </div>
             </div>
             <div class="row">
-                <div class="col-6 offset-6">
-                    <app-order-totals></app-order-totals>
+                <div class="col-6 offset-6" *ngIf="(basketTotal$ |async) as basketTotal">
+                    <app-order-totals [subtotal]="basketTotal.subtotal" [total]="basketTotal.total"
+                        [shippingPrice]="basketTotal.shipping"></app-order-totals>
                     <a routerLink="/checkout" class="btn btn-outline-primary py-2 btn-block">
                         Proceed to checkout</a>
                 </div>

@@ -2,7 +2,8 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Observable } from 'rxjs';
 import { BasketService } from 'src/app/basket/basket.service';
 
-import { IBasket, IBasketItem } from '../../models/basket';
+import { Basket, IBasket, IBasketItem } from '../../models/basket';
+import { IOrderItem } from '../../models/order';
 
 @Component({
   selector: 'app-basket-summery',
@@ -10,7 +11,6 @@ import { IBasket, IBasketItem } from '../../models/basket';
   styleUrls: ['./basket-summery.component.scss'],
 })
 export class BasketSummeryComponent implements OnInit {
-  basket$: Observable<IBasket>;
   @Output() decrement: EventEmitter<IBasketItem> =
     new EventEmitter<IBasketItem>();
   @Output() increment: EventEmitter<IBasketItem> =
@@ -18,11 +18,13 @@ export class BasketSummeryComponent implements OnInit {
   @Output() remove: EventEmitter<IBasketItem> = new EventEmitter<IBasketItem>();
 
   @Input() isBasket = true;
-  constructor(private basketService: BasketService) {}
+  @Input() isOrder = false;
 
-  ngOnInit(): void {
-    this.basket$ = this.basketService.basket$;
-  }
+  // @Input() items: IBasketItem[] | IOrderItem[] = [];
+  @Input() items = [];
+  constructor() {}
+
+  ngOnInit(): void {}
 
   decrementItemQuantity(item: IBasketItem) {
     this.decrement.emit(item);
